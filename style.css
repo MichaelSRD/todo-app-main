@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    Font-size: 18px;
+    background: hsl(0, 0%, 98%);
+    position: relative;
+    transition: background 0.6s;
+}
+header{
+    transition: background-image 0.6s;
+    background-image: url(images/bg-mobile-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+    
+    
+}
+.temas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+.luna{
+    display: none;
+}
+.lunaD{
+    display: block;
+}
+.input{
+    position: relative;
+    
+}
+.input input{
+    
+    border: 0;
+    outline: none;
+    width: 100%;
+}
+.circulo{
+    width: 25px;
+    height: 25px;
+    border: 1px solid hsl(236, 33%, 92%); ;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+.main .contenedor{
+    flex-direction: column;
+}
+.listas{
+   margin-top: 1.5rem;
+   cursor: move;
+}
+.lista{
+ position: relative;
+ background: white;
+ padding: 15px;
+ display: flex;
+ align-items: center;
+ 
+ border-bottom: 1px solid hsl(236, 33%, 92%);   
+}
+.lista input{
+    appearance: none;
+    border: 1px solid hsl(236, 33%, 92%);
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.lista img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 20px; 
+}
+.lista b{
+    
+    font-size: 11px;
+   
+}
+.listat p{
+    text-decoration: line-through;
+}
+.one{
+    border-radius: 10px 10px 0px 0px ;
+}
+.fin{
+    border-radius: 0px 0px 10px 10px;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+ .tarea {
+     height: 50px;
+     border: none;
+     border-radius: 5px;
+     padding-left: 3rem;
+     
+}
+.main{
+    padding: 0rem 2rem;
+    position: relative;
+    top: -6rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.footer-main{
+    padding: 0rem 2rem;
+    position: relative;
+    top: -96px;
+    display: flex;
+    justify-content: center;
+}
+.footer-main .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.ultima{
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: hsl(233, 11%, 84%);
+}
+.borrar:hover{
+    color: #000;
+    cursor: pointer;
+}
+.paginador{
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 1rem;
+    border-radius: 7px;
+    color: hsl(233, 11%, 84%);
+}
+.paginador p{
+    margin-left: 10px;
+    
+}
+.paginador p:hover{
+    cursor: pointer;
+    color: black;
+}
+.activado{
+    color: hsl(199, 53%, 45%);
+}
+.true{
+   background: url(images/icon-check.svg), linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.listas .select{
+    
+    box-shadow: 0px 0px 20px rgba(149, 153, 159, .16);
+}
+.listas .drag{
+    opacity: 0;
+}
+.terminado{
+    text-decoration: line-through;
+    color: rgba(97, 94, 94, 0.253);
+}
+.logo{
+    font-size: 30px;
+}
+.sol{
+   display: block; 
+}
+.solD {
+    display: none;
+}
+.negro{
+    transition: background 0.6s;
+    background: hsl(235, 21%, 11%);
+}
+.listaN{
+    background: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+    border-bottom: 1px solid hsl(233, 14%, 35%); 
+}
+.listaN input{
+    border: 1px solid hsl(233, 14%, 35%);
+}
+.fondoD{
+    transition:  background-image 0.6s;
+    background-image: url(images/bg-mobile-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tareaD{
+     background: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+}
+.ultimaD{
+    background: hsl(235, 24%, 19%);
+    color: hsl(233, 14%, 35%);
+}
+.paginadorD{
+    background: hsl(235, 24%, 19%);
+    color: hsl(233, 14%, 35%);
+}
+ 
+@media (min-width: 800px) {
+    .lista b{
+        font-size: 20px;
+        margin-left: 12px;
+    }
+    .lista{
+        padding: 20px;
+    }
+    .tarea{
+        height: 70px;
+    }
+    .ultima {
+        padding: 20px;
+        font-size: 18px;
+    }
+    .paginador{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+         top: -12px;
+         font-size: 18px;
+    }
+    .header{
+        background-image: url(images/bg-desktop-light.jpg);
+        height: 250px;
+    }
+    .fondoD{
+        background-image: url(images/bg-desktop-dark.jpg);
+        height: 250px;
+    }
+    .main {
+        top: -8rem;   
+    }
+    .footer-main {
+       
+        top: -128px
+    
+    }
+}

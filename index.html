@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Todo app</title>
+
+
+</head>
+
+<body>
+  
+  <header class="header">
+    <div class="contenedor">
+
+    <div class="temas">
+
+    
+      <div class="logo">
+        TODO
+      </div>
+
+      <div class="icono">
+        <img src="images/icon-sun.svg" id="sol" class="sol"  onclick="temasD('sol')" alt="icono de sol tema">
+        <img src="images/icon-moon.svg" id="luna" class="luna" onclick="temasD('luna')"  alt="icono luna dark mode tema">
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="contenedor">
+      <div class="input">
+        <input type="text"  id="tarea" class="tarea" placeholder=" Creatae a new Todo..">
+        <div class="circulo">
+
+        </div>
+      </div>
+      
+      <div class="listas" id="listas">
+
+
+        <div class="lista one listat">
+          <input type="checkbox" name="" id="">
+          
+          <p id="tareas ">Complete enline JavaScript course.</p>
+
+          
+          <img src="images/icon-cross.svg" alt="" srcset="">
+
+        </div>
+        <div class="lista">
+          <input type="checkbox" name="" id="">
+
+          <p id="tareas ">Jog around the park 3x</p>
+
+
+
+          <img src="images/icon-cross.svg" alt="" srcset="">
+        
+        </div>
+        <div class="lista">
+          <input type="checkbox" name="" id="">
+
+          <p id="tareas "> 10 minutes meditation</p>
+
+
+
+          <img src="images/icon-cross.svg" alt="" srcset=""></div>
+        <div class="lista">
+          <input type="checkbox" name="" id="">
+
+          <p id="tareas ">Read For 1 hours</p>
+
+          
+          
+          
+          
+          <img src="images/icon-cross.svg" alt="" srcset=""></div>
+        <div class="lista">
+          <input type="checkbox" name="" id="">
+
+
+          <p id="tareas ">Pick up groceries</p>
+
+          
+          
+          
+          <img src="images/icon-cross.svg" alt="" srcset=""></div>
+        <div class="lista ">
+          <input type="checkbox" name="" id="">
+
+          <p id="tareas " class="tareas">Complete Todo App on Fronted Mentor</p>
+
+
+          <img src="images/icon-cross.svg" alt="" srcset="">
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+ <div class="footer-main">
+   <div class="contenedor">
+
+    <div class="ultima fin">
+
+      <div class="contador">
+       <i id="cont">5</i>  items left
+       </div>
+       <div class="borrar" >
+         Clear Completed
+       </div>
+
+    </div>
+        
+
+   <div class="paginador">
+    <p id="all " class="activado" onclick="active('all')" >All</p>
+    <p id="Active" class="active" onclick="active('activados')">Active</p>
+    <p id="completed" class="terminadot" onclick="active('complete')">Completed</p> 
+
+   </div>
+  </div>
+
+ </div>
+ <!-- libreria de ordenamiento de listas drag and drop --> 
+ <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
